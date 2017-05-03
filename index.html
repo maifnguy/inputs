@@ -12,75 +12,98 @@
         <table>
           <tr>
             <th>Control Type</th>
-            <th>Control</th>
+            <th>Control 1</th>
+            <th>Control 2</th>
             <th>Value Entered</th>
           </tr>
           <tr>
             <td>input type="checkbox"</td>
-            <td><input type="checkbox" class="input" id="checkbox" value="true"></td>
+            <td><input type="checkbox" id="checkbox" value="true"></td>
+            <td><input type="checkbox" id="checkbox2" value="true"></td>
             <td id="checkboxVal"></td>
           </tr>
           <tr>
             <td>input type="color"</td>
-            <td><input type="color" class="input" id="color"></td>
+            <td><input type="color" id="color"></td>
+            <td><input type="color" id="color2"></td>
             <td id="colorVal"></td>
           </tr>
           <tr>
             <td>input type="date"</td>
-            <td><input type="date" class="input" id="date"></td>
+            <td><input type="date" id="date"></td>
+            <td><input type="date" id="date2"></td>
             <td id="dateVal"></td>
           </tr>
           <tr>
             <td>input type="datetime-local"</td>
-            <td><input type="datetime-local" class="input" id="datetime"></td>
+            <td><input type="datetime-local" id="datetime"></td>
+            <td><input type="datetime-local" id="datetime2"></td>
             <td id="datetimeVal"></td>
           </tr>
           <tr>
             <td>input type="email"</td>
-            <td><input type="email" class="input" id="email"></td>
+            <td><input type="email" id="email"></td>
+            <td><input type="email" id="email2"></td>
             <td id="emailVal"></td>
           </tr>
           <tr>
             <td>input type="month"</td>
             <td><input type="month" id="month"></td>
+             <td><input type="month" id="month2"></td>
             <td id="monthVal"></td>
           </tr>
           <tr>
             <td>input type="number"</td>
             <td> <input type="number" id="number" min="0"></td>
+            <td> <input type="number" id="number2" min="0"></td>
             <td id="numberVal"></td>
           </tr>
           <tr>
             <td>input type="password"</td>
             <td><input type="password" id="password"></td>
+            <td><input type="password" id="password2"></td>
             <td id="passwordVal"></td>
           </tr>
           <tr>
             <td>input type="radio"</td>
             <td>
-              <input type="radio" name="order" class="radio" value="First"> First<br>
-              <input type="radio" name="order" class="radio" value="Second"> Second<br>
-              <input type="radio" name="order" class="radio" value="Third"> Third
+              <input type="radio" name="radio" class="radio" value="First" id='first'> First<br>
+              <input type="radio" name="radio" class="radio" value="Second" id=second> Second<br>
+              <input type="radio" name="radio" class="radio" value="Third" id='third'> Third
+            </td>
+            <td>
+              <input type="radio" name="radio2" class="radio2" value="First" id='first2'> First<br>
+              <input type="radio" name="radio2" class="radio2" value="Second" id='second2'> Second<br>
+              <input type="radio" name="radio2" class="radio2" value="Third" id='third2'>Third
             </td>
             <td id="radioVal"></td>
           </tr>
           <tr>
             <td>input type="range"</td>
             <td><input type="range" id="range" min="0" max="100"></td>
+            <td><input type="range" id="range2" min="0" max="100"></td>
             <td id="rangeVal"></td>
           </tr>
           <tr>
             <td>input type="search"</td>
             <td><input type="search" id="search"></td>
+            <td><input type="search" id="search2"></td>
             <td id="searchVal"></td>
           </tr>
           <tr>
             <td>input type="select"</td>
             <td>
               <select id="select">
-                <option value="Dog" >Dog</option>
-                <option value="Cat" >Cat</option>
-                <option value="Rabbit">Rabbit</option>
+                <option value="Dog" id="dog">Dog</option>
+                <option value="Cat" id="cat">Cat</option>
+                <option value="Rabbit" id="rabbit">Rabbit</option>
+              </select>
+            </td>
+            <td>
+              <select id="select2">
+                <option value="Dog" id="dog2">Dog</option>
+                <option value="Cat" id="cat2">Cat</option>
+                <option value="Rabbit" id="rabbit2">Rabbit</option>
               </select>
             </td>
             <td id="selectVal"></td>
@@ -89,9 +112,16 @@
             <td>input type="select(multiple)"</td>
             <td>
               <select multiple id="selectm">
-                <option value="Dog">Dog</option>
-                <option value="Cat">Cat</option>
-                <option value="Rabbit">Rabbit</option>
+                <option value="Dog" id='dogm'>Dog</option>
+                <option value="Cat" id="catm">Cat</option>
+                <option value="Rabbit" id="rabbitm">Rabbit</option>
+              </select>
+            </td>
+            <td>
+              <select multiple id="selectm2">
+                <option value="Dog" id="dogm2">Dog</option>
+                <option value="Cat" id="catm2">Cat</option>
+                <option value="Rabbit" id="rabbitm2">Rabbit</option>
               </select>
             </td>
             <td id="selectmVal"></td>
@@ -99,31 +129,37 @@
           <tr>
             <td>input type="tel"</td>
             <td><input type="tel" id="tel"></td>
+            <td><input type="tel" id="tel2"></td>
             <td id="telVal"></td>
           </tr>
           <tr>
             <td>input type="text"</td>
             <td><input type="text" id="text"></td>
+            <td><input type="text" id="text2"></td>
             <td id="textVal"></td>
           </tr>
           <tr>
             <td>input type="textarea"</td>
             <td><textarea id="textarea" rows="2" cols="20"></textarea></td>
+            <td><textarea id="textarea2" rows="2" cols="20"></textarea></td>
             <td id="textareaVal"></td>
           </tr>
           <tr>
             <td>input type="time"</td>
             <td><input type="time" id="time"></td>
+            <td><input type="time" id="time2"></td>
             <td id="timeVal"></td>
           </tr>
           <tr>
             <td>input type="url"</td>
             <td><input type="url" id="url"></td>
+            <td><input type="url" id="url2"></td>
             <td id="urlVal"></td>
           </tr>
           <tr>
             <td>input type="week"</td>
             <td><input type="week" id="week"></td>
+            <td><input type="week" id="week2"></td>
             <td id="weekVal"></td>
           </tr>
         </table>
