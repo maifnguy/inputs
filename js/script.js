@@ -1,4 +1,4 @@
-// PART 1: Display input value
+// PART 1: Display input value  ----------------------------------------//
   
   // object and function for inputs on .change() event
   var onChange = {'#color':'#colorVal', '#date':'#dateVal', '#datetime':'#datetimeVal', '#month':'#monthVal', '.radio':'#radioVal', '#range':'#rangeVal', '#select':'#selectVal', '#selectm':'#selectmVal', '#time':'#timeVal', '#week':'#weekVal'};
@@ -29,9 +29,9 @@
     }
   });
 
-//------------------------------------------------------------------------//
 
-// PART 2: Mirror Input
+
+// PART 2: Mirror Input--------------------------------------------------//
   
   // Mirror for .change() events
   $.each( onChange, function( i, val ) {
@@ -40,6 +40,7 @@
     });
   });
   
+
   // Mirror for .input() events
   $.each( onInput, function( i, val ) {
      $(i).bind('keypress keyup blur', function() {
@@ -48,23 +49,30 @@
   });
 
 
-// Mirror for checkbox
- $('#checkbox').on('change', function() {
+  // Mirror for checkbox
+  $('#checkbox').on('change', function() {
     if($(this).is(':checked')) {
       $('#checkbox2').prop('checked', $(this).prop('checked'));
      } else {
-      $('#checkbox2').prop('checked',false);
+      $('#checkbox2').prop('checked', false);
      };
+  });
+
+
+  // Mirror for radio
+  var radio = ['#first', '#second', '#third']
+  $.each( radio, function(i, val) {            
+    $(val).on('change', function() {
+      if($(this).is(':checked')) {
+      $(val + '2').prop("checked", true); 
+      };
+    });
   });
 
 
 
 
-
-
-
-
-// Practice Code 
+// Practice Code  -------------------------------------------------------//
 
   //$('#color').on('change',function(){
   //	$('#colorVal').text($(this).val());
